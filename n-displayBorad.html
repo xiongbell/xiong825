@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>仙谷云-老板看板</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="screen-orientation" content="portrait">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="less/displayBorad.css" />
+
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav" id='header'>
+			<div class="statistics">
+				<button class="statistics_today act">今日</button>
+				<button class="statistics_yesterday">昨日</button>
+				<button class="statistics_week">本周</button>
+				<button class="statistics_month">本月</button>
+				<button class="statistics_appoint" id='change_date' data-options='{"type":"date"}'><i></i> 指定</button>
+			</div>
+			<!--<a href="" class="refresh"></a>-->
+			<a href="" class="back">登录人</a>
+			<h1 class="mui-title">上海仙谷股份有限公司</h1>
+		</header>
+
+		<div class="mui-content" id='mui_content'>
+			<div class="today_order">
+				<div class="receivable_today today">
+					<p class="tit">今日应收 (元)</p>
+					<p class="money">￥<b>24540</b></p>
+					<p class="account_receivable">应收客户: <b>32</b>家</p>
+				</div>
+				<div class="sales_today today">
+					<p class="tit">今日销售额 (元)</p>
+					<p class="money">￥<b>24540</b></p>
+					<p class="account_receivable">
+						<span>客户: <b>62</b>家</span>
+						<span>订单: <b>60</b>笔</span>
+					</p>
+				</div>
+				<a href="javascript:;" class="goods_statistics">商品统计</a>
+				<a href="javascript:;" class="location_record">定位记录</a>
+			</div>
+			<div class="sales_list">
+				<div class="list">
+					<p class="list_tit list_tit_act">
+						<i class="ranking No1"></i>
+						<span class="sales_name">业务员名称1</span>
+						<span class="receivable"><b>23笔</b>/<b>23家</b></span>
+						<span class="sales_volume">销售额  <b><i>￥</i>45020</b></span>
+					</p>
+					<ul class="list_content list_content_act">
+						<li>
+							<span class="no">30</span>
+							<p class="list_content_customer">今日应收客户(家)</p>
+						</li>
+						<li>
+							<span class="no"><i>￥</i><b>300000</b></span>
+							<p class="list_content_receivable">今日应收额(元)</p>
+						</li>
+						<li>
+							<img src="images/order1.png" />
+							<p class="list_content_order">查看订单 </p>
+						</li>
+				</div>
+
+			</div>
+			<div class="list_container"></div>
+			<a href="javascript:;" class="load_more">查看更多</a>
+			<a href="javascript:;" class="top"></a>
+			<a href="javascript:;" class="feedback"></a>
+
+		</div>
+		<div class="appoint_bg"></div>
+		<div class="appoint_content">
+			<input data-options={"type":"date"} class="date_start btn" value="" readonly="">
+			—
+			<input data-options={"type":"date"} class="date_end btn" value="" readonly="">
+			<button class="mui-pull-right">确定</button>
+		</div>
+		<div id="alertArea">
+			<div class="alertBg"></div>
+			<div class="alertTxt">
+				<p>请使用竖屏访问！</p>
+			</div>
+		</div>
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js"></script>
+		<script src="js/loadMore.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rotatePage.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//指定日期
+			(function($) {
+				$.init();
+				var btns = $('.appoint_content input');
+				var dtpicker = $('.mui-dtpicker');
+				var d = new Date();
+				var Year = d.getFullYear();
+				var Month = d.getMonth() + 1;
+				var Day = d.getDate(); //交货日期默认延后一天
+				if(Month < 10) Month = '0' + Month;
+				if(Day < 10) Day = '0' + Day;
+				dtpicker
+				btns.each(function() {
+					
+					this.value = Year + '-' + Month + '-' + Day;
+					this.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						var that = this;
+						var picker = new $.DtPicker(options);
+						picker.show(function(e) {
+							that.value = e.text;
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+
+			var $statisticsToday = $('.statistics_today');
+			var $statisticsYesterday = $('.statistics_yesterday');
+			var $statisticsWeek = $('.statistics_week');
+			var $statisticsMonth = $('.statistics_month');
+			var $statisticsAppoint = $('.statistics_appoint');
+			var $dateEnterBtn = $('.mui-dtpicker-header .mui-btn-blue');
+			var $list = $('.list');
+			var $listTit = $('.list_tit');
+			var $listContent = $('.list_content');
+			var $loadMore = $('.load_more');
+			var $listContainer = $('.list_container');
+			var $top = $('.top');
+			var windHeight = $(window).height();
+			$(document).on('tap', '.statistics button', function() {
+				var idx = $(this).index();
+				$('.statistics button').eq(idx).addClass('act').siblings().removeClass('act');
+			})
+			$statisticsToday.click(function() {
+				$('.sales_today .tit').html('今日销售额 (元)');
+			})
+			$statisticsYesterday.click(function() {
+				$('.sales_today .tit').html('昨日销售额 (元)');
+			})
+			$statisticsWeek.click(function() {
+				$('.sales_today .tit').html('本周销售额 (元)');
+			})
+			$statisticsMonth.click(function() {
+				$('.sales_today .tit').html('本月销售额 (元)');
+			})
+			$statisticsAppoint.click(function(){
+				$('.appoint_bg').show();
+				$('.appoint_content').show();
+			})
+			$('.appoint_content button').click(function(){
+				var startDate = $('.date_start').val();
+				var endData = $('.date_end').val();
+				console.log(startDate)
+				console.log(endData)
+				var startDay = startDate.split('-').slice(-1);
+				var endDay = endData.split('-').slice(-1);
+				$('.appoint_bg').hide();
+				$('.appoint_content').hide();
+				$('.sales_today .tit').html('销售额统计（'+ startDay +'日-'+ endDay +'日）');
+			})
+			$('.appoint_bg').click(function(){
+				$(this).hide();
+				$('body .mui-dtpicker').removeClass('mui-active');
+			})
+			$top.hide();
+			$(window).scroll(function() {
+				if($(this).scrollTop() > windHeight) {
+					$top.fadeIn();
+				} else {
+					$top.fadeOut();
+				}
+			})
+			$top.click(function() {
+				$(window).scrollTop(0);
+			})
+			$list.each(function(index) {
+				var idx = $(this).index();
+				$listTit.eq(idx).find('.ranking').children('.num').html(idx + 1);
+
+				$listTit.eq(idx).click(function() {
+					if($listContent.eq(idx).hasClass('list_content_act')) {
+						$listContent.eq(idx).removeClass('list_content_act');
+						$listTit.eq(idx).removeClass('list_tit_act');
+					} else {
+						$listContent.removeClass('list_content_act');
+						$listContent.eq(idx).addClass('list_content_act');
+						$listTit.removeClass('list_tit_act')
+						$listTit.eq(idx).addClass('list_tit_act');
+
+					}
+				})
+			})
+			LOADMORE('.load_more', '.sales_list .list', '.list_container', 10);
+		</script>
+	</body>
+
+</html>

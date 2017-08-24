@@ -1,0 +1,115 @@
+body {
+	background: #eeeeee;
+}
+.bd-bottom,
+.bd-top {
+	position: relative;
+}
+
+.bd-top::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	background: #DDDDDD;
+	transform: scaleY(.5);
+}
+
+.bd-bottom::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 1px;
+	background: #DDDDDD;
+	transform: scaleY(.5);
+}
+/*tab start*/
+.mui-content{
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+}
+.mui-slider{
+	background: #EEEEEE;
+}
+.mui-slider-indicator.mui-segmented-control{
+	height: 3.75rem;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+	line-height: 3.75rem;
+	font-size: 1.5rem;
+}
+.mui-bar-nav~.mui-content{
+	padding-top: 4.0rem;
+	border-top: 1px solid #cfcfcf;
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+    margin-top: -2px;
+}
+.mui-slider-indicator{
+	background: white;
+}
+.mui-slider .mui-slider-group .item_list li{
+	margin-top: 1.0rem;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border: none;
+}
+.item_list li{
+	background: white;
+}
+.shop-name {
+    padding: 0 4.267%;
+    background: #FFFFFF;
+    overflow: hidden;
+    height: 4.0rem;
+    line-height: 4.0rem;
+    border-bottom: solid 1px #DDDDDD;
+    color: #333333;
+    font-size: 1.5rem;
+}
+.order-info-list {
+    background: #FFFFFF;
+    overflow: hidden;
+    line-height: 4.0rem;
+    position: relative;
+}	
+.order-info-list p {
+    padding: 0 4.267%;
+    overflow: hidden;
+    font-size: 1.4rem;
+    position: relative;
+    margin-top: -1px;
+    z-index: 0;
+    box-shadow: 0 0 0 0.5px #DDDDDD;
+    color: #333333;
+}
+.order-info-list .mui-pull-right{
+	color: #666666;
+}
+.order-info-list p.ji {
+	background: url(../images/ji.png) right 1px no-repeat;
+	background-size: 3.0rem;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #d94952 !important;
+	position: relative;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #d94952 !important;
+}
+.mui-content .mui-slider .mui-slider-group .mui-slider-item {
+    overflow-y: scroll;
+    border-bottom: 0;
+}

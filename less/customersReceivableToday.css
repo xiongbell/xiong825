@@ -1,0 +1,144 @@
+.maxWidth {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.textOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei';
+}
+body header {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+body header .all {
+  width: 10%;
+  height: 4.0rem;
+  display: block;
+  float: left;
+  color: #848484;
+  font-size: 1.2rem;
+}
+body header .screen {
+  height: 4rem;
+  display: block;
+  float: right;
+  background-size: 0.8rem;
+  font-size: 1.4rem;
+  color: #007aff;
+  width: 18%;
+  text-align: right;
+}
+body .mui-bar.mui-bar-nav {
+  height: 4rem;
+  line-height: 4rem;
+}
+body .mui-bar.mui-bar-nav .mui-icon {
+  padding: 0;
+  margin: 0.25rem 0 0;
+  font-size: 4rem;
+  color: #7d7d7d;
+}
+body .mui-bar.mui-bar-nav .mui-title {
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #333333;
+  left: 80px;
+  right: 80px;
+}
+body .mui-bar-nav {
+  box-shadow: 0 1px #ddd;
+}
+body .mui-bar-nav ~ .mui-content {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.list-container{
+	background: #FFFFFF;
+	overflow: hidden;
+}
+.list-container li{
+	overflow: hidden;
+	box-shadow: 1px 0 0 0.5px #DDDDDD;
+	padding: 4.267%;
+}
+.list-container li img{
+	width: 15%;
+	margin-right: 5%;
+}
+.list-container li .list-content{
+	width: 80%;
+}
+.list-container li .list-content p{
+	/*line-height: 2.0rem;*/
+}
+.list-container li .list-content p span{
+	display: inline-block;
+	max-width: 75%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #333333;
+	font-size: 1.4rem;
+}
+.list-container li .list-content p a{
+	display: inline-block;
+	border: solid 1px #c9b692;
+	border-radius: .4rem;
+	font-size: 1.0rem;
+	color: #999999;
+	padding: 0.5% 2%;
+	vertical-align: top;
+}
+.list-container li .list-content p:last-child{
+	line-height: 2.0rem;
+}
+.list-container li .list-content p:last-child span{
+	font-size: 1.0rem;
+	color: #333333;
+}
+.list-container li .list-content p:last-child span:last-child b{
+	color: #ff686d;
+	font-size: 1.4rem;
+	
+}
+
+body #alertArea {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+body #alertArea .alertBg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+body #alertArea .alertTxt p {
+  width: 80%;
+  line-height: 4.0rem;
+  background: white;
+  border-radius: 1.0rem;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  margin-top: -3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}

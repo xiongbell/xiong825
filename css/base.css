@@ -1,0 +1,125 @@
+    /* 禁用iPhone中Safari的字号自动调整 */
+    html
+    {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    /* 去除iPhone中默认的input样式 */
+    input[type="submit"], input[type="reset"], input[type="button"],input
+    {
+        -webkit-appearance: none;
+        resize: none;
+        outline: none;
+    }
+    input,button{
+    	outline: none;
+    }
+    /* 取消链接高亮  */
+    body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    /* 设置HTML5元素为块 */
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    {
+        display: block;
+    }
+    /* 图片自适应 */
+    img
+    {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+        -ms-interpolation-mode: bicubic; /*为了照顾ie图片缩放失真*/
+       display: block;
+    }
+    /* 初始化 */
+    body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    body
+    {
+        font: normal 14px/1.5 Tahoma, "Lucida Grande" ,Verdana, "Microsoft Yahei" ,STXihei,hei;
+    }
+    em, i
+    {
+        font-style: normal;
+    }
+    b{
+    	font-weight: normal;
+    }
+    strong
+    {
+        font-weight: normal;
+    }
+    .clearfix:after
+    {
+        content: "";
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+    }
+    .clearfix
+    {
+        zoom: 1;
+    }
+    a
+    {
+        text-decoration: none;
+        color: #1f2022;
+        font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;
+        cursor: pointer;
+    }
+    ul, ol
+    {
+        list-style: none;
+    }
+    h1, h2, h3, h4, h5, h6
+    {
+        font-size: 100%;
+        font-weight: normal;
+        font-family: Microsoft YaHei;
+    }
+    img
+    {
+        border: none;
+    }
+	html{font-size:62.5%; /* 10÷16=62.5% */}
+	/*html {
+	    font-size : 10px;}*/
+	
+	@media only screen and (min-width: 401px){
+	    html {
+	        font-size: 12.5px !important;
+	    }
+	}
+	@media only screen and (min-width: 428px){
+	    html {
+	        font-size: 13.375px !important;
+	    }
+	}
+	@media only screen and (min-width: 481px){
+	    html {
+	        font-size: 15px !important; 
+	    }
+	}
+	@media only screen and (min-width: 569px){
+	    html {
+	        font-size: 17.5px !important; 
+	    }
+	}
+	@media only screen and (min-width: 641px){
+	    html {
+	        font-size: 20px !important; 
+	    }
+	}
+	body,html{
+	/*overflow-x: hidden;*/
+	/*height: 100%;*/
+	}
+	
+	

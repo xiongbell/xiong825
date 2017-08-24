@@ -1,0 +1,15 @@
+.maxWidth {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.textOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei';
+}

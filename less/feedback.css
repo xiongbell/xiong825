@@ -1,0 +1,86 @@
+.maxWidth {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.textOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei';
+}
+body {
+  background: #EEEEEE;
+  font-family: 'Microsoft YaHei';
+}
+body header {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+body header .back {
+  width: 10%;
+  height: 4.0rem;
+  background: url("../images/iconfont-back.png") left center no-repeat;
+  display: block;
+  float: left;
+  background-size: 1.0rem;
+}
+body header .search {
+  width: 10%;
+  height: 4.0rem;
+  background: url("../images/search2.png") right center no-repeat;
+  display: block;
+  float: right;
+  background-size: 1.2rem;
+}
+body .mui-bar {
+  height: 4.0rem;
+}
+body .mui-bar .mui-title {
+  color: #333333;
+  font-size: 1.8rem;
+  height: 4.0rem;
+  line-height: 4.0rem;
+  left: 70px;
+  right: 70px;
+}
+body .mui-bar-nav {
+  box-shadow: 0 1px #DDDDDD;
+}
+body .mui-bar-nav ~ .mui-content {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4.0rem;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+body .mui-bar-nav ~ .mui-content .logo {
+  width: 40%;
+  margin: 8% auto;
+}
+body .mui-bar-nav ~ .mui-content .txt {
+  width: 100%;
+  background: white;
+  padding: 4.267%;
+  font-size: 1.6rem;
+  min-height: 12.0rem;
+}
+body .mui-bar-nav ~ .mui-content .sub_mit {
+  display: block;
+  border: none;
+  width: 90%;
+  margin: 5.0rem auto;
+  background: #f62737;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 4.0rem;
+  padding: 0;
+  border-radius: 0.5rem;
+}

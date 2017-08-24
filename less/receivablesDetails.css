@@ -1,0 +1,80 @@
+.orderList{
+	margin-bottom: 1.0rem;
+	box-shadow: 1px 0 0 0.5px #DDDDDD;
+}
+.shop-name {
+	display: block;
+	padding: 0 4.267%;
+	background: #FFFFFF;
+	overflow: hidden;
+	height: 4.0rem;
+	line-height: 4.0rem;
+	border-bottom: solid 1px #DDDDDD;
+	color: #333333;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.shop-name::after {
+	content: '';
+	position: absolute;
+	right: 4.267%;
+	width: 0.8rem;
+	height: 4.0rem;
+	line-height: 4.0rem;
+	background: url(../images/more.png) 0 center no-repeat;
+	background-size: .8rem;
+}
+
+.order-info-list {
+	background: #FFFFFF;
+	overflow: hidden;
+	line-height: 4.0rem;
+	position: relative;
+}
+
+.order-info-list p,.order-info-list a {
+	padding:4.267% 4.267% 4.267% 0;
+	margin-left: 4.267%;
+	overflow: hidden;
+	font-size: 1.4rem;
+	position: relative;
+	margin-top: -1px;
+	z-index: 0;
+	box-shadow: 1px 0 0 0.5px #DDDDDD;
+	color: #333333;
+}
+.order-info-list a {
+	display: block;
+}
+.order-info-list a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 4.267%;
+	width: 0.8rem;
+	height: 6.6rem;
+	line-height: 6.6rem;
+	background: url(../images/more.png) 0 center no-repeat;
+	background-size: .8rem;
+}
+.order-info-list p i{
+	display: block;
+	font-size: 1.2rem;
+	color:#333333;
+	line-height: 1.5rem;
+}
+.order-info-list p span,.order-info-list a span{
+	font-size: 1.5rem;
+	display: block;
+	line-height: 1.8rem;
+}
+.oddNum{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+	color: #999999;
+}
+.xg-color{
+	color: #f62737 !important;
+}

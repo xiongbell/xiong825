@@ -1,0 +1,412 @@
+.maxWidth {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.textOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei';
+}
+body {
+  background: #EEEEEE;
+}
+body .statistics {
+  background: white;
+  height: 4.0rem;
+  color: #333333;
+}
+body .statistics button {
+  width: 20%;
+  float: left;
+  border-radius: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  box-sizing: border-box;
+  height: 3.0rem;
+  line-height: 3.0rem;
+  display: block;
+  margin: 0.5rem 0;
+  border-right: #dddddd solid 1px;
+}
+body .statistics button:last-child {
+  border-right: none;
+}
+body .statistics .act {
+  color: #de4549;
+}
+body header {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+body header .back {
+  height: 4.0rem;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 4.0rem;
+  display: block;
+  float: right;
+  padding-right: 4.267%;
+}
+body .mui-bar {
+  height: 8.0rem;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 999;
+}
+body .mui-bar .mui-title {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  height: 4.0rem;
+  line-height: 4.0rem;
+  left: 4.267%;
+  text-align: left;
+  right: 70px;
+}
+body .mui-bar-nav {
+  box-shadow: none;
+  background: #de4549;
+}
+body .mui-btn-blue,
+body .mui-btn-primary,
+body input[type=submit] {
+  color: #fff;
+  border: 1px solid #de4549;
+  background-color: #de4549;
+}
+body .mui-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body .mui-bar-nav ~ .mui-content {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 8.0rem;
+  border-radius: 0.5rem;
+}
+body .mui-bar-nav ~ .mui-content .today_order {
+  background: #de4549;
+  overflow: hidden;
+  padding: 4.267% 15% 4.267% 4.267%;
+  position: relative;
+}
+body .mui-bar-nav ~ .mui-content .today_order .receivable_today {
+  float: right;
+  padding-left: 6%;
+  width: 50%;
+}
+body .mui-bar-nav ~ .mui-content .today_order .sales_today {
+	width: 50%;
+  float: left;
+  background: url("../images/line_vertical.png") right center no-repeat;
+  background-size: 1px;
+}
+body .mui-bar-nav ~ .mui-content .today_order .today p {
+  color: white;
+  font-size: 1.2rem;
+}
+.receivable_today .tit{
+	width: 70%;
+	background: url("../images/right3.png") no-repeat right center;
+	background-size: 0.65rem;
+}
+body .mui-bar-nav ~ .mui-content .today_order .today .money {
+  font-size: 1.4rem;
+  margin: 1.0rem 0;
+}
+body .mui-bar-nav ~ .mui-content .today_order .today .money b {
+  font-size: 1.8rem;
+}
+body .mui-bar-nav ~ .mui-content .today_order .goods_statistics {
+  position: absolute;
+  width: 4.0rem;
+  right: 0;
+  background: white;
+  color: #de4549;
+  font-size: 1.0rem;
+  padding: .5rem 2%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  line-height: 1.0rem;
+  height: 3.0rem;
+  padding: 0 2%;
+  padding-top: 0.6rem;
+}
+body .mui-bar-nav ~ .mui-content .today_order .location_record {
+  position: absolute;
+  width: 4.0rem;
+  right: 0;
+  background: white;
+  color: #de4549;
+  font-size: 1.0rem;
+  padding: .5rem 2%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  line-height: 1.0rem;
+  height: 3.0rem;
+  padding: 0 2%;
+  padding-top: 0.6rem;
+  top: 4.8rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list,
+body .mui-bar-nav ~ .mui-content .list_container .list {
+  border-bottom: solid 1px #DDDDDD;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit {
+  padding: 0 4.267%;
+  line-height: 4.0rem;
+  overflow: hidden;
+  position: relative;
+  background: #f8f8f8;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit::after,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit::after {
+  content: '';
+  position: absolute;
+  width: 0.8rem;
+  height: 1.2rem;
+  background: url("../images/up.png") right center no-repeat;
+  background-size: 0.8rem;
+  right: 4.267%;
+  top: 50%;
+  margin-top: -0.6rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .ranking,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .ranking {
+  width: 12%;
+  height: 4.0rem;
+  line-height: 2.0rem;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .ranking b,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .ranking b {
+  display: block;
+  width: 2.0rem;
+  height: 2.0rem;
+  line-height: 2.0rem;
+  background: #c7c7cd;
+  border-radius: 0.25rem;
+  color: white;
+  margin-top: 1.0rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .No1,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .No1 {
+  background: url("../images/no1.png") left center no-repeat;
+  background-size: 80%;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .No2,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .No2 {
+  background: url("../images/no2.png") left center no-repeat;
+  background-size: 80%;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .No3,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .No3 {
+  background: url("../images/no3.png") left center no-repeat;
+  background-size: 80%;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .sales_name,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .sales_name {
+  display: inline-block;
+  float: left;
+  width: 28%;
+  color: #333333;
+  font-size: 1.6rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .receivable,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .receivable {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  font-size: 1.3rem;
+  color: #333333;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .sales_volume,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .sales_volume {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  font-size: 1.0rem;
+  color: #333333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .sales_volume b,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .sales_volume b {
+  color: #ff686d;
+  font-size: 1.35rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit_act::after,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit_act::after {
+  content: '';
+  position: absolute;
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url("../images/down.png") right center no-repeat;
+  background-size: 1.2rem;
+  right: 4.267%;
+  top: 50%;
+  margin-top: -0.4rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content {
+  background: #eeeeee;
+  overflow: hidden;
+  border-top: solid 1px #DDDDDD;
+  display: none;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content li,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content li {
+  width: 33.3333%;
+  padding: 1.0rem 0;
+  float: left;
+  text-align: center;
+  background: url("../images/vertical_line_gray.png") right center no-repeat;
+  background-size: 1px 65%;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content li .no,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content li .no{
+	display: block;
+	line-height: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1.0rem;
+  color: #ff686d;
+  font-size: 1.8rem;
+}
+.no i{
+	font-size: 1.2rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content li img,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content li img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1.0rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content li p,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content li p {
+  color: #333333;
+  font-size: 1.1rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content li:last-child,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content li:last-child {
+  background: none;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_content_act,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_content_act {
+  display: block;
+}
+body .mui-bar-nav ~ .mui-content .load_more {
+  display: block;
+  color: #ff686d;
+  font-size: 1.6rem;
+  background: white;
+  line-height: 4.0rem;
+  text-align: center;
+  border-bottom: solid 1px #DDDDDD;
+  margin-bottom: 1.0rem;
+}
+body .mui-bar-nav ~ .mui-content .top {
+  width: 3.0rem;
+  height: 3.0rem;
+  background: url(../images/fanhuidingbu-.png) 0 0 no-repeat;
+  background-size: 100%;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 5.0rem;
+}
+body .mui-bar-nav ~ .mui-content .feedback {
+  width: 3.0rem;
+  height: 3.0rem;
+  background: url(../images/yijianfankui.png) 0 0 no-repeat;
+  background-size: 100%;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 1.5rem;
+}
+body #alertArea {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+body #alertArea .alertBg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+body #alertArea .alertTxt p {
+  width: 80%;
+  line-height: 4.0rem;
+  background: white;
+  border-radius: 1.0rem;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  margin-top: -3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/*指定日期*/
+.appoint_bg{
+	background: #000000;
+	opacity: .5;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.appoint_content{
+	display: none;
+	position: fixed;
+	top: 4.0rem;
+	z-index: 1000;
+	background: #FFFFFF;
+	padding: 0 4.267%;
+}
+.appoint_content input{
+	color: #666666;
+	font-size: 1.5rem;
+	border: solid 1px #999999;
+	border-radius: .25rem;
+	width: 35%;
+	line-height: 3.0rem;
+	text-align: center;
+	margin: 1.0rem 0.25rem;
+}
+.appoint_content button{
+	width: 15%;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	border: solid 1px #de4549;
+	background: #de4549;
+	border-radius: .25rem;
+	line-height: 3.0rem;
+	text-align: center;
+	margin: 1.0rem 0.25rem;
+}

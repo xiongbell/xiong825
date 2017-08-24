@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>仙谷掌柜--定位记录</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="less/locationRecord.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav"  id='header'>
+			<a href="" class="back"></a>
+			<h1 class="mui-title">定位记录</h1>
+			<a class="screen">筛选</a>
+		</header>
+		<div class="mui-content"  id='mui_content'>
+			<div class="tips">
+				<p>
+					<span class="explain">说明：仅加载近三天的记录</span>
+					<span class="reference">APP需要处于运行状态且手机要允许获取位置权限，位置为就近解析，有可能存在误差，仅供参考！</span>
+				</p>
+				<img class="close" src="images/close.png" />
+			</div>
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1mobile">今天(<b>12</b>日)</a>
+					<a class="mui-control-item" href="#item2mobile">昨天(<b>11</b>日)</a>
+					<a class="mui-control-item" href="#item3mobile">前天(<b>10</b>日)</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<ul class="item_list sales_list sales_list_1">
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">111111孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>							
+						</ul>
+						<ul class="list_container list_container_1"></ul>
+						<a href="javascript:;" class="load_more load_more_1">查看更多</a>	
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<ul class="item_list sales_list_2">
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">22222孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>								
+							
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>								
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>								
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>								
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>								
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>								
+						</ul>
+						<ul class="list_container list_container_2"></ul>
+						<a href="javascript:;" class="load_more load_more_2">查看更多</a>						
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<ul class="item_list sales_list sales_list_3">
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">33333孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>启动定位-APP启动</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">33333孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>启动定位-APP启动</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">33333孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>启动定位-APP启动</span></p>
+								</div>	
+							</li>								
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">33333孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号</p>
+								</div>
+									
+							</li>
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>开单定位-上海两行贸易有限公司</span></p>
+								</div>	
+							</li>	
+							<li>
+								<div class="in_item_list">
+									<div class="list_name_date">
+										<span class="list_name">孙波波</span>
+										<span class="list_date">12:33</span>
+									</div>
+									<p class="address">上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号上海浦东新区康桥路787号</p>
+									<p class="remarks">备注：<span>启动定位-APP启动</span></p>
+								</div>	
+							</li>								
+							
+							
+						</ul>
+						<ul class="list_container list_container_3"></ul>
+						<a href="javascript:;" class="load_more load_more_3">查看更多</a>	
+					</div>					
+				</div>
+			</div>			
+		</div>
+		
+		<div class="scroll_area">
+			<div class="bg"></div>
+			<div class="text_area">
+				<h3>筛选</h3>
+				<ul>
+					<li><a href="">全部</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+					<li><a href="">孙波波</a></li>
+				</ul>
+			</div>
+				
+		</div>
+		<div id="alertArea">
+			<div class="alertBg"></div>
+			<div class="alertTxt">
+				<p>请使用竖屏访问！</p>
+			</div>
+				
+		</div>		
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rotatePage.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+
+			$('.close').click(function() {
+				$('.tips').slideUp(50);
+				$('.mui-slider').css({
+					'top':'4.0rem'
+				})
+				$('.mui-slider-item ').css('height',list_container_height + $('.tips').outerHeight()+20);
+			
+			})
+
+			var list_container_height = $(window).height() - $('header').height() - $('.tips').outerHeight() - $('#sliderSegmentedControl').height();
+			var slider_top = $('header').height() + $('.tips').outerHeight() - 2;
+			$('.mui-slider-item ').css('height',list_container_height);
+			$('.mui-slider').css({
+				'top':slider_top
+			})
+
+			$('.screen').click(function(){
+				$('.scroll_area').show();
+				$('.bg').show()
+				$('.text_area').animate({left:'60%'},100);
+				$('body,html').css({'overflow':'hidden','height':'100%'});
+				$('.text_area ul').css('height',$(window).height() - $('.text_area h3').height())
+			})
+
+			$('.bg').click(function(){
+				$('.text_area').animate({
+					left:'100%'
+				},200);
+				$('.scroll_area').delay(150).fadeOut(50);
+				$('body,html').css({'overflow':'scroll','height':'100%'})
+			})	
+			$('body,html').css({'overflow':'hidden','height':'100%'});
+			function LOADMORE(loadbtn,lis,listcontainer,defaultPg){
+				//loadMore
+				var defaultPage = defaultPg;
+				var loading = 0;
+				var contentLi = [];
+				var $loadMore = $(loadbtn);
+				var $ulList= $(listcontainer)
+			
+				var $lis = $(lis);
+				
+				$('.sales_list').hide();
+				
+				
+			
+				if($lis.length > 10) {
+					$loadMore.show()
+				} else {
+					$loadMore.hide()
+				}
+			
+				$ulList.html("");
+				for(var a = 0; a < defaultPage; a++) {
+					$lis.eq(a).appendTo($ulList);
+				}
+				for(var b = defaultPage; b < $lis.length; b++) {
+					contentLi.push($lis.eq(b))
+				}
+			
+				$loadMore.click(function() {
+					console.log(111)
+					var k = 0;
+					var t = 0;
+					var moreList = $(listcontainer + " li").length;
+					for(var i = moreList - defaultPage; i < moreList - loading; i++) {
+			
+						if(i == contentLi.length) {
+							$loadMore.html("没有更多了~");
+							return;
+						}
+			
+						contentLi[i].appendTo($ulList);
+						t = moreList + k;
+						k++;
+			
+					}
+				})
+			}			
+			
+			LOADMORE('.load_more_1', '.sales_list_1 li', '.list_container_1', 16);
+			LOADMORE('.load_more_2', '.sales_list_2 li', '.list_container_2', 16);
+			LOADMORE('.load_more_3', '.sales_list_3 li', '.list_container_3', 16);
+
+		</script>
+	</body>
+
+</html>

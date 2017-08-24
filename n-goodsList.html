@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=0" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>商品清单--掌柜采购</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="less/goodsList.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<ul class="goods-list">
+				<li class="">
+					<div class="info">
+						<div class="right">
+							<p class="goods-tit">三得利冰纯啤酒冰纯纯啤酒冰纯啤酒三得利冰纯啤酒冰纯纯啤酒冰纯啤酒三得利冰纯啤酒冰纯纯啤酒冰纯啤酒 冰纯啤酒冰纯啤酒冰纯...(箱·1X12)</p>
+							<p class="goods-price xg-color">
+								<span class="mui-pull-left">￥<b>5.00</b></span>
+								<span class="mui-pull-left">x <b>1</b></span>
+								<span class="mui-pull-right">￥<b>5.00</b></span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="info">
+						<div class="right">
+							<p class="goods-tit">三得利冰纯啤酒冰纯纯啤酒冰纯啤酒三得利冰纯啤酒冰纯纯啤酒冰纯啤酒三得利冰纯啤酒冰纯纯啤酒冰纯啤酒 冰纯啤酒冰纯啤酒冰纯...(箱·1X12)</p>
+							<p class="goods-price xg-color">
+								<span class="mui-pull-left">￥<b>5.00</b></span>
+								<span class="mui-pull-left">x <b>1</b></span>
+								<span class="mui-pull-right">￥<b>5.00</b></span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="">
+					<div class="info">
+						<div class="right">
+							<p class="goods-tit">三得利冰纯啤酒冰纯纯啤酒冰纯啤酒三得利冰纯啤酒冰纯纯啤酒冰纯啤酒三得利冰纯啤酒冰纯纯啤酒冰纯啤酒 冰纯啤酒冰纯啤酒冰纯...(箱·1X12)</p>
+							<p class="goods-price xg-color">
+								<span class="mui-pull-left">￥<b>5.00</b></span>
+								<span class="mui-pull-left">x <b>1</b></span>
+								<span class="mui-pull-right">￥<b>5.00</b></span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//控制一行半隐藏
+				(function($) {
+					$.fn.displayPart = function(opts) {
+						$(this).each(function() {
+							displayPart($(this), opts);
+						});
+					}
+
+					function displayPart($el, opts) {
+						var defaults = {
+							displayLength: 55 //具体的想要显示的字数
+						}
+						this.Settings = $.extend(defaults, opts);
+						if(this.Settings.displayLength == defaults.displayLength && $el.data("textcount")) {
+							this.Settings.displayLength = $el.data("textcount");
+						}
+						var displayLength = this.Settings.displayLength;
+						var text = $el.text();
+						if(!text) return "";
+						var result = "";
+						var count = 0;
+						for(var i = 0; i < displayLength; i++) {
+							var _char = text.charAt(i);
+							if(count >= displayLength) break;
+							if(/[^x00-xff]/.test(_char)) count++; //双字节字符，//[u4e00-u9fa5]中文
+							result += _char;
+							count++;
+						}
+						if(result.length < text.length) {
+							result += "...";
+						}
+						$el.text(result);
+					}
+				})(jQuery);
+				$(".goods-tit").displayPart();
+				//控制一行半隐藏
+			})
+		</script>
+	</body>
+
+</html>

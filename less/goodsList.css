@@ -1,0 +1,54 @@
+/*header start*/
+.maxWidth {
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+}
+body {
+	background: #eeeeee !important;
+}
+
+
+/*mui-content start*/
+
+.mui-content {
+	padding-top: 0rem !important;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.goods-list{
+	background: #EEEEEE;
+	overflow: hidden;
+}
+.goods-list li{
+	padding: 4.267% 4.267% 0;
+	overflow: hidden;
+    border-top: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DDDDDD;
+    margin-bottom: 1.0rem;
+	background: #FFFFFF;
+}
+.info{
+	overflow: hidden;
+	padding-bottom: 4.267%;
+}
+.goods-list li .goods-tit{
+	color: #666666;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+.goods-price{
+	font-size: 1.4rem;
+	overflow: hidden;
+}
+.goods-price span.mui-pull-left{
+	margin-right: 2.0rem;
+}
+.remarks{
+	margin: 0 -4.267%;
+	overflow: hidden;
+	padding: .7rem 4.267%;
+	border-top: solid 1px #DDDDDD;
+	font-size: 1.0rem;
+	color: #999999;
+}

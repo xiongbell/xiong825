@@ -1,0 +1,223 @@
+.maxWidth {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.textOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei';
+}
+body header {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+body header .back {
+  width: 10%;
+  height: 4.0rem;
+  background: url("../images/iconfont-back.png") left center no-repeat;
+  display: block;
+  float: left;
+  background-size: 1.0rem;
+}
+body header .sort {
+  padding-left: 5%;
+  height: 4rem;
+  display: block;
+  float: right;
+  background-size: 0.8rem;
+  font-size: 1.4rem;
+  color: #007aff;
+  background: url(../images/sort.png) left center no-repeat;
+  background-size: 1.0rem;
+}
+body .mui-bar.mui-bar-nav {
+  height: 4rem;
+  line-height: 4rem;
+}
+body .mui-bar.mui-bar-nav .mui-icon {
+  padding: 0;
+  margin: 0.25rem 0 0;
+  font-size: 4rem;
+  color: #7d7d7d;
+}
+body .mui-bar.mui-bar-nav .mui-title {
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #333333;
+  left: 190px;
+  right: 190px;
+}
+body .mui-bar-nav {
+  box-shadow: 0 1px #ddd;
+}
+body .mui-bar-nav ~ .mui-content {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit {
+  padding: 0 4.267%;
+  line-height: 4.5rem;
+  background: white;
+  border-bottom: solid 1px #DDDDDD;
+  overflow: hidden;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .customer_name,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .customer_name {
+  width: 50%;
+  font-size: 1.5rem;
+  color: #333333;
+  float: left;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .aggregate_price,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .aggregate_price {
+  width: 50%;
+  float: left;
+  font-size: 1.0rem;
+  color: #333333;
+  background: url(../images/right.png) right center no-repeat;
+  background-size: 0.8rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .aggregate_price i,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .aggregate_price i {
+  width: 20%;
+  display: block;
+  float: left;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit .aggregate_price b,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit .aggregate_price b {
+  width: 70%;
+  display: block;
+  float: left;
+  color: #ff686d;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 1.2rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit_act,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit_act {
+  padding: 0 4.267%;
+  line-height: 4.5rem;
+  background: white;
+  border-bottom: solid 1px #DDDDDD;
+  overflow: hidden;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .list_tit_act .aggregate_price,
+body .mui-bar-nav ~ .mui-content .list_container .list .list_tit_act .aggregate_price {
+  width: 50%;
+  float: left;
+  font-size: 1.0rem;
+  color: #333333;
+  background: url(../images/down.png) right center no-repeat;
+  background-size: 1.2rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list {
+  background: #f8f8f8;
+  border-bottom: solid 1px #DDDDDD;
+  margin-bottom: 1.0rem;
+  display: none;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li {
+  margin-left: 4.267%;
+  overflow: hidden;
+  padding: 2% 4.267% 2% 0;
+  border-bottom: solid 1px #DDDDDD;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li:last-child,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li:last-child {
+  border-bottom: none;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .num,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .num {
+  width: 15%;
+  float: left;
+  margin-top: 0.6rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .num i,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .num i {
+  width: 2.8rem;
+  height: 2.8rem;
+  background: #c7c7cc;
+  display: block;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 2.8rem;
+  color: white;
+  font-size: 1.0rem;
+  font-family: arial;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .num i b,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .num i b {
+  display: block;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .num .No1,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .num .No1,
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .num .No2,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .num .No2,
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .num .No3,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .num .No3 {
+  background: #ff686d;
+  padding-top: 0.4rem;
+  line-height: 1.0rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .goods_statistics,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .goods_statistics {
+  width: 50%;
+  float: left;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .goods_statistics span,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .goods_statistics span {
+  display: block;
+  color: #333333;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .goods_statistics .goods,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .goods_statistics .goods {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .goods_statistics .sales_num,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .goods_statistics .sales_num {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .total,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .total {
+  float: right;
+  color: #333333;
+  font-size: 1rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list li .total b,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list li .total b {
+  color: #ff686d;
+  font-size: 1.6rem;
+}
+body .mui-bar-nav ~ .mui-content .sales_list .list .goods_list_act,
+body .mui-bar-nav ~ .mui-content .list_container .list .goods_list_act {
+  background: #f8f8f8;
+  border-bottom: solid 1px #DDDDDD;
+  margin-bottom: 1.0rem;
+  display: block;
+}
+body .mui-bar-nav ~ .mui-content .load_more {
+  display: block;
+  color: #ff686d;
+  font-size: 1.6rem;
+  background: white;
+  line-height: 4.0rem;
+  text-align: center;
+  border-bottom: solid 1px #DDDDDD;
+  margin-bottom: 1.0rem;
+}

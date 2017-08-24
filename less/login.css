@@ -1,0 +1,133 @@
+.maxWidth {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+.textOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input,
+select,
+textarea {
+  font-family: 'Microsoft YaHei';
+}
+body {
+  background: #EEEEEE;
+  font-family: 'Microsoft YaHei';
+}
+.mui-content {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+.mui-content{
+	background: #EEEEEE !important;
+}
+.mui-content .logo {
+  width: 45%;
+  margin: 15% auto;
+}
+.mui-content .logon_area .mui-input-group .mui-input-row {
+  height: 5.0rem;
+}
+.mui-content .logon_area .mui-input-group input[type=color],
+.mui-content .logon_area .mui-input-group input[type=date],
+.mui-content .logon_area .mui-input-group input[type=datetime-local],
+.mui-content .logon_area .mui-input-group input[type=datetime],
+.mui-content .logon_area .mui-input-group input[type=email],
+.mui-content .logon_area .mui-input-group input[type=month],
+.mui-content .logon_area .mui-input-group input[type=number],
+.mui-content .logon_area .mui-input-group input[type=password],
+.mui-content .logon_area .mui-input-group input[type=search],
+.mui-content .logon_area .mui-input-group input[type=tel],
+.mui-content .logon_area .mui-input-group input[type=text],
+.mui-content .logon_area .mui-input-group input[type=time],
+.mui-content .logon_area .mui-input-group input[type=url],
+.mui-content .logon_area .mui-input-group input[type=week],
+.mui-content .logon_area .mui-input-group select,
+.mui-content .logon_area .mui-input-group textarea {
+  height: 5.0rem;
+  font-size: 1.6rem;
+}
+.mui-content .logon_area .mui-input-group .yzm {
+  overflow: hidden;
+}
+.mui-content .logon_area .mui-input-group .yzm .mui-input-row {
+  width: 65%;
+  float: left;
+}
+.mui-content .logon_area .mui-input-group .yzm .code {
+  display: inline-block;
+  float: right;
+  line-height: 3.0rem;
+  letter-spacing: 0.5rem;
+  font-size: 1.7rem;
+  background: #eee;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.0rem;
+  margin-right: 4.267%;
+  font-family: '黑体';
+}
+.mui-content .logon_area .mui-checkbox.mui-left label {
+  padding-left: 3.2rem;
+  font-size: 1.5rem;
+  font-family: 'Microsoft YaHei';
+  height: 4.0rem;
+  line-height: 4.0rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mui-content .logon_area .check_box {
+  height: 4.0rem;
+  font-size: 1.2rem;
+  color: #999999;
+}
+.mui-content .logon_area .check_box .left {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.mui-content .logon_area .check_box .left input[type=checkbox] {
+  width: 1.0rem;
+  height: 1.0rem;
+  top: 0rem;
+  left: 1.2rem;
+}
+.mui-content .logon_area .check_box .left input[type=checkbox]:checked:before {
+  color: #f62737;
+  font-size: 1.8rem;
+  line-height: 4.0rem;
+}
+.mui-content .logon_area .check_box .left input[type=checkbox]:before {
+  font-size: 1.8rem;
+  line-height: 4.0rem;
+}
+.mui-content .logon_area .check_box .right {
+  position: relative;
+  width: 50%;
+  text-align: right;
+  float: right;
+  padding-right: 4.267%;
+}
+.mui-content .logon_area .check_box .right a {
+  font-size: 1.5rem;
+  line-height: 4.0rem;
+  color: #BBBBBB;
+  text-decoration: underline;
+}
+.mui-content .logon_area .sub_mit {
+  display: block;
+  width: 90%;
+  margin: 2.0rem auto;
+  background: #f62737;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 4.0rem;
+  border-radius: 0.5rem;
+}
